@@ -60,14 +60,14 @@
             this.pnlTopBarr.Controls.Add(this.BtnClosed);
             this.pnlTopBarr.Location = new System.Drawing.Point(0, 0);
             this.pnlTopBarr.Name = "pnlTopBarr";
-            this.pnlTopBarr.Size = new System.Drawing.Size(768, 50);
+            this.pnlTopBarr.Size = new System.Drawing.Size(644, 50);
             this.pnlTopBarr.TabIndex = 0;
             // 
             // BtnClosed
             // 
             this.BtnClosed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnClosed.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClosed.Location = new System.Drawing.Point(620, 8);
+            this.BtnClosed.Location = new System.Drawing.Point(592, 8);
             this.BtnClosed.Name = "BtnClosed";
             this.BtnClosed.Size = new System.Drawing.Size(38, 39);
             this.BtnClosed.TabIndex = 0;
@@ -90,7 +90,7 @@
             this.PnlContainer.Controls.Add(this.MskIdNumber);
             this.PnlContainer.Controls.Add(this.LblCedula);
             this.PnlContainer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PnlContainer.Location = new System.Drawing.Point(84, 154);
+            this.PnlContainer.Location = new System.Drawing.Point(49, 139);
             this.PnlContainer.Name = "PnlContainer";
             this.PnlContainer.Size = new System.Drawing.Size(450, 353);
             this.PnlContainer.TabIndex = 1;
@@ -202,7 +202,7 @@
             // 
             this.LblTitle.AutoSize = true;
             this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitle.Location = new System.Drawing.Point(176, 85);
+            this.LblTitle.Location = new System.Drawing.Point(148, 75);
             this.LblTitle.Name = "LblTitle";
             this.LblTitle.Size = new System.Drawing.Size(323, 29);
             this.LblTitle.TabIndex = 2;
@@ -211,17 +211,18 @@
             // BtnSave
             // 
             this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSave.Location = new System.Drawing.Point(574, 151);
+            this.BtnSave.Location = new System.Drawing.Point(532, 137);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(64, 64);
             this.BtnSave.TabIndex = 3;
             this.BtnSave.Text = "Guardar";
             this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // BtnEdit
             // 
             this.BtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnEdit.Location = new System.Drawing.Point(574, 221);
+            this.BtnEdit.Location = new System.Drawing.Point(532, 207);
             this.BtnEdit.Name = "BtnEdit";
             this.BtnEdit.Size = new System.Drawing.Size(64, 64);
             this.BtnEdit.TabIndex = 4;
@@ -231,7 +232,7 @@
             // Btndischarged
             // 
             this.Btndischarged.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btndischarged.Location = new System.Drawing.Point(574, 291);
+            this.Btndischarged.Location = new System.Drawing.Point(532, 277);
             this.Btndischarged.Name = "Btndischarged";
             this.Btndischarged.Size = new System.Drawing.Size(64, 64);
             this.Btndischarged.TabIndex = 5;
@@ -241,18 +242,18 @@
             // BtnList
             // 
             this.BtnList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnList.Location = new System.Drawing.Point(574, 361);
+            this.BtnList.Location = new System.Drawing.Point(532, 347);
             this.BtnList.Name = "BtnList";
             this.BtnList.Size = new System.Drawing.Size(64, 64);
             this.BtnList.TabIndex = 6;
             this.BtnList.Text = "Lista";
             this.BtnList.UseVisualStyleBackColor = true;
             // 
-            // PetOwner
+            // PetOwnerUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(766, 575);
+            this.ClientSize = new System.Drawing.Size(642, 538);
             this.Controls.Add(this.BtnList);
             this.Controls.Add(this.Btndischarged);
             this.Controls.Add(this.BtnEdit);
@@ -261,7 +262,7 @@
             this.Controls.Add(this.PnlContainer);
             this.Controls.Add(this.pnlTopBarr);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PetOwner";
+            this.Name = "PetOwnerUI";
             this.ShowIcon = false;
             this.Text = "Catálogo Propietario Mascota";
             this.pnlTopBarr.ResumeLayout(false);
