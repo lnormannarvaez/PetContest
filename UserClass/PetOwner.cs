@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Policy;
 
 namespace MascotContest.UserClass
 {
@@ -30,6 +31,13 @@ namespace MascotContest.UserClass
         /*                                  Instance methods                                       */
         /* --------------------------------------------------------------------------------------- */
 
+        /// <summary>
+        /// Agrega una nueva instancia de Propietario de Mascota al Array
+        /// </summary>
+        /// <param name="arr">Arreglo en el cual se debe agregar una nueva instancia al final</param>
+        /// <param name="i">Indice actual de elementos en el Array</param>
+        /// <returns>Indice en el que fue agregado el elemento si hay espacio, -1  en caso 
+        /// que ya el array n o contenga espacio de almacenamiento</returns>
         public int AddPetOwner(PetOwner[] arr, int i)
         {
             //Verificar si hay espacio en el arreglo para agregar un nuevo elemento
@@ -37,11 +45,48 @@ namespace MascotContest.UserClass
             {
                 //Si hay espacio se agrega el nuevo objeto propietario
                 arr[i + 1] = this; //Le agrego el objeto que esta actualmente en uso
-                return i;
+                return ++i;
             }//End if            
-            return -1;
+            return -1; //Retornar el tope del array para indicar que no hay espacio
         }//End-Methods
 
+        public PetOwner EditOwner (string id, int ind, PetOwner[] arrPet) 
+        {
+            bool seek = false;  //Booleano para controla la busqueda en el arreglo
+            int i = 0;  //Variable de control para el recorrido del Array
+
+            //Recorrer el arreglo hasta los elementos actuales para buscar el registro de Owner
+            while (i <= ind && !seek)
+            {
+                if (arrPet[i].IdNumber == id)
+                { 
+                    return arrPet[i];   //Retornar la instancia PetOwner buscada y se corta la iteración
+                    //seek = true;      //Se cambia el valor booleano para indicar que se encontro
+                }
+                ++i;    //Se incrementa en uno para pasar al siguiente indice
+            }//End-While
+                    
+            return null;  //Si no se encuentra retornará null
+        }  //End-Methods 
+
+        public int DeleteRegister (string id, PetOwner[] arr, int limit)
+        {
+            bool seek = false;  //Booleano para controla la busqueda en el arreglo
+            int i = 0;  //Variable de control para el recorrido del Array
+
+            //Recorrer el arreglo hasta los elementos actuales para buscar el registro de Owner
+            while (i <= limit && !seek)
+            {
+                if (arr[i].IdNumber == id)
+                {
+                    arr[i].Enable = 0; //Deshabilitar el registro
+                    return i;
+                }
+                ++i;    //Se incrementa en uno para pasar al siguiente indice
+            }//End-While
+
+            return -1;  //Si no se encuentra retornará null 
+        }
 
     }//End-Class
 }//End-namespace
