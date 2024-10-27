@@ -48,14 +48,8 @@
             this.BtnEdit = new System.Windows.Forms.Button();
             this.Btndischarged = new System.Windows.Forms.Button();
             this.BtnList = new System.Windows.Forms.Button();
-            this.DGView = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTopBarr.SuspendLayout();
             this.PnlContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGView)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTopBarr
@@ -66,7 +60,7 @@
             this.pnlTopBarr.Controls.Add(this.BtnClosed);
             this.pnlTopBarr.Location = new System.Drawing.Point(0, 0);
             this.pnlTopBarr.Name = "pnlTopBarr";
-            this.pnlTopBarr.Size = new System.Drawing.Size(1222, 50);
+            this.pnlTopBarr.Size = new System.Drawing.Size(643, 50);
             this.pnlTopBarr.TabIndex = 0;
             // 
             // BtnClosed
@@ -74,7 +68,7 @@
             this.BtnClosed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnClosed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnClosed.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClosed.Location = new System.Drawing.Point(1170, 8);
+            this.BtnClosed.Location = new System.Drawing.Point(591, 8);
             this.BtnClosed.Name = "BtnClosed";
             this.BtnClosed.Size = new System.Drawing.Size(38, 39);
             this.BtnClosed.TabIndex = 0;
@@ -99,14 +93,14 @@
             this.PnlContainer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PnlContainer.Location = new System.Drawing.Point(49, 137);
             this.PnlContainer.Name = "PnlContainer";
-            this.PnlContainer.Size = new System.Drawing.Size(450, 353);
+            this.PnlContainer.Size = new System.Drawing.Size(450, 302);
             this.PnlContainer.TabIndex = 1;
             // 
             // TxtAddress
             // 
             this.TxtAddress.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtAddress.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtAddress.Location = new System.Drawing.Point(122, 297);
+            this.TxtAddress.Location = new System.Drawing.Point(122, 251);
             this.TxtAddress.Name = "TxtAddress";
             this.TxtAddress.Size = new System.Drawing.Size(300, 28);
             this.TxtAddress.TabIndex = 11;
@@ -114,7 +108,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 307);
+            this.label6.Location = new System.Drawing.Point(28, 259);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 20);
             this.label6.TabIndex = 10;
@@ -124,7 +118,7 @@
             // 
             this.TxtEmail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtEmail.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEmail.Location = new System.Drawing.Point(122, 242);
+            this.TxtEmail.Location = new System.Drawing.Point(122, 206);
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(300, 28);
             this.TxtEmail.TabIndex = 9;
@@ -132,7 +126,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 252);
+            this.label5.Location = new System.Drawing.Point(28, 214);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 20);
             this.label5.TabIndex = 8;
@@ -142,7 +136,7 @@
             // 
             this.MskPhone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MskPhone.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MskPhone.Location = new System.Drawing.Point(122, 188);
+            this.MskPhone.Location = new System.Drawing.Point(122, 163);
             this.MskPhone.Mask = "####-####";
             this.MskPhone.Name = "MskPhone";
             this.MskPhone.Size = new System.Drawing.Size(300, 28);
@@ -151,7 +145,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 198);
+            this.label4.Location = new System.Drawing.Point(28, 171);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 6;
@@ -161,7 +155,7 @@
             // 
             this.TxtSurName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtSurName.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSurName.Location = new System.Drawing.Point(122, 135);
+            this.TxtSurName.Location = new System.Drawing.Point(122, 118);
             this.TxtSurName.Name = "TxtSurName";
             this.TxtSurName.Size = new System.Drawing.Size(300, 28);
             this.TxtSurName.TabIndex = 5;
@@ -169,7 +163,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 145);
+            this.label3.Location = new System.Drawing.Point(28, 126);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 20);
             this.label3.TabIndex = 4;
@@ -179,7 +173,7 @@
             // 
             this.TxtNames.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtNames.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNames.Location = new System.Drawing.Point(122, 82);
+            this.TxtNames.Location = new System.Drawing.Point(122, 74);
             this.TxtNames.Name = "TxtNames";
             this.TxtNames.Size = new System.Drawing.Size(300, 28);
             this.TxtNames.TabIndex = 3;
@@ -187,7 +181,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 92);
+            this.label2.Location = new System.Drawing.Point(28, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 2;
@@ -266,56 +260,12 @@
             this.BtnList.UseVisualStyleBackColor = true;
             this.BtnList.Click += new System.EventHandler(this.BtnList_Click);
             // 
-            // DGView
-            // 
-            this.DGView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
-            this.DGView.Location = new System.Drawing.Point(627, 148);
-            this.DGView.Name = "DGView";
-            this.DGView.RowHeadersWidth = 51;
-            this.DGView.RowTemplate.Height = 24;
-            this.DGView.Size = new System.Drawing.Size(552, 218);
-            this.DGView.TabIndex = 7;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Cedula";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Apellidos";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Estado";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
             // PetOwnerUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1220, 538);
-            this.Controls.Add(this.DGView);
+            this.ClientSize = new System.Drawing.Size(641, 486);
             this.Controls.Add(this.BtnList);
             this.Controls.Add(this.Btndischarged);
             this.Controls.Add(this.BtnEdit);
@@ -331,7 +281,6 @@
             this.pnlTopBarr.ResumeLayout(false);
             this.PnlContainer.ResumeLayout(false);
             this.PnlContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,11 +308,6 @@
         private System.Windows.Forms.Button Btndischarged;
         private System.Windows.Forms.Button BtnList;
         private System.Windows.Forms.Button BtnClosed;
-        private System.Windows.Forms.DataGridView DGView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }
 

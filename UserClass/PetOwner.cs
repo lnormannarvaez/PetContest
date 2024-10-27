@@ -50,6 +50,15 @@ namespace MascotContest.UserClass
             return -1; //Retornar el tope del array para indicar que no hay espacio
         }//End-Methods
 
+        /// <summary>
+        /// Realiza una modificación o actualización de los datos de una la instancia propietario
+        /// de mascota según el id especificado
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="ind">limite total de elementos que se tienen actualmente en el array</param>
+        /// <param name="arrPet">Array en el cual se encuentran almacenadas las instancias de 
+        /// propietarios de mascto</param>
+        /// <returns>Retorna la instacia de propietario de mascota modificada, null sino se encuentra</returns>
         public PetOwner EditOwner (string id, int ind, PetOwner[] arrPet) 
         {
             bool seek = false;  //Booleano para controla la busqueda en el arreglo
@@ -69,6 +78,15 @@ namespace MascotContest.UserClass
             return null;  //Si no se encuentra retornará null
         }  //End-Methods 
 
+        /// <summary>
+        /// Elimina de forma lógica, no fisica, la instancia de propietario de Mascota indicada por id
+        /// </summary>
+        /// <param name="id">Identificar de la instancia propietario de mascota a eliminar</param>
+        /// <param name="arr">Array en el cual se encuentran almacenadas las instancias de mascotas</param>
+        /// <param name="limit">Limite total actual hasta donde se debe buscar la instancia en el 
+        /// Array</param>
+        /// <returns>El indice del Array donde se encuentra la instancia de Mascota eliminada, -1 en 
+        /// caso que no se encuentre</returns>
         public int DeleteRegister (string id, PetOwner[] arr, int limit)
         {
             bool seek = false;  //Booleano para controla la busqueda en el arreglo

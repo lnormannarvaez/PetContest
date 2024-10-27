@@ -1,4 +1,5 @@
-﻿using MascotContest.UserClass;
+﻿using MascotContest.UI;
+using MascotContest.UserClass;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -98,21 +99,20 @@ namespace MascotContest
 
         private void BtnList_Click(object sender, EventArgs e)
         {
-            //Validar que las filas se encuentren limpias antes de cargar con los datos
-            DGView.Rows.Clear();
-            //DGView.DataSource = arrayOwn.ToList();
-            for (int i = 0; i <= index; ++i)
+            //Validar si hay elementos actualmente en el Array, si index supera 0 es que tiene elementos
+            if (index >= 0)
             {
-                //Validar si el registro esta habilitado para visualizar
-                if (arrayOwn[i].Enable == 1)
-                {
-                    DGView.Rows.Add(arrayOwn[i].IdNumber, 
-                                    arrayOwn[i].Name, 
-                                    arrayOwn[i].Surname,
-                                    arrayOwn[i].Enable);
-                }//end                
+                //Se carga la ventana (formulario donde desplegará la lista)
+                FrmListPetOwner frmList = new FrmListPetOwner(arrayOwn); //Se pasa en el constructor el Array
+                frmList.Show();
             }
-        }
+            else
+            {
+                MessageBox.Show ("No hay Datos que mostrar, debe realizar \n" +
+                    "registro de datos primero", "Propietarios Registrados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }            
+        }//End-Methods
 
         private void Btndischarged_Click(object sender, EventArgs e)
         {
@@ -125,11 +125,17 @@ namespace MascotContest
                 //Verificar si la eliminación se realizo correctamente
                 if (rst > 0)
                 {
-                    MessageBox.Show("Elemento eliminado", "Borrar");
+                    MessageBox.Show("El registro indicado ha sido dado de baja", 
+                        "Baja Propietario",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("No se encontro el registro", "Borroar");
+                    MessageBox.Show("No se encontro el registro indicado", 
+                        "Baja Propietario",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
                 }
 
             }//End-IF
