@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PetOwnerUI));
             this.pnlTopBarr = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.BtnClosed = new System.Windows.Forms.Button();
             this.PnlContainer = new System.Windows.Forms.Panel();
             this.TxtAddress = new System.Windows.Forms.TextBox();
@@ -44,10 +46,10 @@
             this.MskIdNumber = new System.Windows.Forms.MaskedTextBox();
             this.LblCedula = new System.Windows.Forms.Label();
             this.LblTitle = new System.Windows.Forms.Label();
-            this.BtnSave = new System.Windows.Forms.Button();
-            this.BtnEdit = new System.Windows.Forms.Button();
-            this.Btndischarged = new System.Windows.Forms.Button();
             this.BtnList = new System.Windows.Forms.Button();
+            this.Btndischarged = new System.Windows.Forms.Button();
+            this.BtnEdit = new System.Windows.Forms.Button();
+            this.BtnSave = new System.Windows.Forms.Button();
             this.pnlTopBarr.SuspendLayout();
             this.PnlContainer.SuspendLayout();
             this.SuspendLayout();
@@ -56,19 +58,30 @@
             // 
             this.pnlTopBarr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlTopBarr.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlTopBarr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(195)))), ((int)(((byte)(0)))));
+            this.pnlTopBarr.Controls.Add(this.label1);
             this.pnlTopBarr.Controls.Add(this.BtnClosed);
             this.pnlTopBarr.Location = new System.Drawing.Point(0, 0);
             this.pnlTopBarr.Name = "pnlTopBarr";
-            this.pnlTopBarr.Size = new System.Drawing.Size(643, 50);
+            this.pnlTopBarr.Size = new System.Drawing.Size(550, 50);
             this.pnlTopBarr.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(48, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Registro de Propietario";
             // 
             // BtnClosed
             // 
             this.BtnClosed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnClosed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnClosed.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClosed.Location = new System.Drawing.Point(591, 8);
+            this.BtnClosed.Location = new System.Drawing.Point(501, 8);
             this.BtnClosed.Name = "BtnClosed";
             this.BtnClosed.Size = new System.Drawing.Size(38, 39);
             this.BtnClosed.TabIndex = 0;
@@ -91,9 +104,9 @@
             this.PnlContainer.Controls.Add(this.MskIdNumber);
             this.PnlContainer.Controls.Add(this.LblCedula);
             this.PnlContainer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PnlContainer.Location = new System.Drawing.Point(49, 137);
+            this.PnlContainer.Location = new System.Drawing.Point(48, 114);
             this.PnlContainer.Name = "PnlContainer";
-            this.PnlContainer.Size = new System.Drawing.Size(450, 302);
+            this.PnlContainer.Size = new System.Drawing.Size(450, 297);
             this.PnlContainer.TabIndex = 1;
             // 
             // TxtAddress
@@ -118,7 +131,7 @@
             // 
             this.TxtEmail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtEmail.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEmail.Location = new System.Drawing.Point(122, 206);
+            this.TxtEmail.Location = new System.Drawing.Point(122, 202);
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(300, 28);
             this.TxtEmail.TabIndex = 9;
@@ -126,7 +139,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 214);
+            this.label5.Location = new System.Drawing.Point(28, 210);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 20);
             this.label5.TabIndex = 8;
@@ -136,7 +149,7 @@
             // 
             this.MskPhone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MskPhone.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MskPhone.Location = new System.Drawing.Point(122, 163);
+            this.MskPhone.Location = new System.Drawing.Point(122, 155);
             this.MskPhone.Mask = "####-####";
             this.MskPhone.Name = "MskPhone";
             this.MskPhone.Size = new System.Drawing.Size(300, 28);
@@ -145,7 +158,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 171);
+            this.label4.Location = new System.Drawing.Point(28, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 6;
@@ -155,7 +168,7 @@
             // 
             this.TxtSurName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtSurName.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSurName.Location = new System.Drawing.Point(122, 118);
+            this.TxtSurName.Location = new System.Drawing.Point(122, 106);
             this.TxtSurName.Name = "TxtSurName";
             this.TxtSurName.Size = new System.Drawing.Size(300, 28);
             this.TxtSurName.TabIndex = 5;
@@ -163,7 +176,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 126);
+            this.label3.Location = new System.Drawing.Point(28, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 20);
             this.label3.TabIndex = 4;
@@ -173,7 +186,7 @@
             // 
             this.TxtNames.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtNames.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNames.Location = new System.Drawing.Point(122, 74);
+            this.TxtNames.Location = new System.Drawing.Point(122, 60);
             this.TxtNames.Name = "TxtNames";
             this.TxtNames.Size = new System.Drawing.Size(300, 28);
             this.TxtNames.TabIndex = 3;
@@ -181,7 +194,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 82);
+            this.label2.Location = new System.Drawing.Point(28, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 2;
@@ -191,8 +204,8 @@
             // 
             this.MskIdNumber.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MskIdNumber.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MskIdNumber.Location = new System.Drawing.Point(122, 31);
-            this.MskIdNumber.Mask = "###-######-####A";
+            this.MskIdNumber.Location = new System.Drawing.Point(122, 17);
+            this.MskIdNumber.Mask = "###-######-####L";
             this.MskIdNumber.Name = "MskIdNumber";
             this.MskIdNumber.Size = new System.Drawing.Size(300, 28);
             this.MskIdNumber.TabIndex = 1;
@@ -200,7 +213,7 @@
             // LblCedula
             // 
             this.LblCedula.AutoSize = true;
-            this.LblCedula.Location = new System.Drawing.Point(28, 33);
+            this.LblCedula.Location = new System.Drawing.Point(28, 25);
             this.LblCedula.Name = "LblCedula";
             this.LblCedula.Size = new System.Drawing.Size(61, 20);
             this.LblCedula.TabIndex = 0;
@@ -210,62 +223,73 @@
             // 
             this.LblTitle.AutoSize = true;
             this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitle.Location = new System.Drawing.Point(148, 75);
+            this.LblTitle.Location = new System.Drawing.Point(120, 72);
             this.LblTitle.Name = "LblTitle";
             this.LblTitle.Size = new System.Drawing.Size(323, 29);
             this.LblTitle.TabIndex = 2;
             this.LblTitle.Text = "Información de Propietario";
             // 
-            // BtnSave
+            // BtnList
             // 
-            this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSave.Location = new System.Drawing.Point(532, 137);
-            this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(64, 64);
-            this.BtnSave.TabIndex = 3;
-            this.BtnSave.Text = "Guardar";
-            this.BtnSave.UseVisualStyleBackColor = true;
-            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            this.BtnList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnList.FlatAppearance.BorderSize = 0;
+            this.BtnList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnList.Image = ((System.Drawing.Image)(resources.GetObject("BtnList.Image")));
+            this.BtnList.Location = new System.Drawing.Point(372, 424);
+            this.BtnList.Name = "BtnList";
+            this.BtnList.Size = new System.Drawing.Size(44, 44);
+            this.BtnList.TabIndex = 6;
+            this.BtnList.UseVisualStyleBackColor = true;
+            this.BtnList.Click += new System.EventHandler(this.BtnList_Click);
+            // 
+            // Btndischarged
+            // 
+            this.Btndischarged.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btndischarged.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btndischarged.FlatAppearance.BorderSize = 0;
+            this.Btndischarged.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btndischarged.Image = ((System.Drawing.Image)(resources.GetObject("Btndischarged.Image")));
+            this.Btndischarged.Location = new System.Drawing.Point(430, 424);
+            this.Btndischarged.Name = "Btndischarged";
+            this.Btndischarged.Size = new System.Drawing.Size(44, 44);
+            this.Btndischarged.TabIndex = 5;
+            this.Btndischarged.UseVisualStyleBackColor = true;
+            this.Btndischarged.Click += new System.EventHandler(this.Btndischarged_Click);
             // 
             // BtnEdit
             // 
             this.BtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnEdit.Location = new System.Drawing.Point(532, 207);
+            this.BtnEdit.FlatAppearance.BorderSize = 0;
+            this.BtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEdit.Image = global::MascotContest.Properties.Resources.btn_edit1;
+            this.BtnEdit.Location = new System.Drawing.Point(315, 424);
             this.BtnEdit.Name = "BtnEdit";
-            this.BtnEdit.Size = new System.Drawing.Size(64, 64);
+            this.BtnEdit.Size = new System.Drawing.Size(44, 44);
             this.BtnEdit.TabIndex = 4;
-            this.BtnEdit.Text = "Editar";
             this.BtnEdit.UseVisualStyleBackColor = true;
             this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
             // 
-            // Btndischarged
+            // BtnSave
             // 
-            this.Btndischarged.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btndischarged.Location = new System.Drawing.Point(532, 277);
-            this.Btndischarged.Name = "Btndischarged";
-            this.Btndischarged.Size = new System.Drawing.Size(64, 64);
-            this.Btndischarged.TabIndex = 5;
-            this.Btndischarged.Text = "Baja";
-            this.Btndischarged.UseVisualStyleBackColor = true;
-            this.Btndischarged.Click += new System.EventHandler(this.Btndischarged_Click);
-            // 
-            // BtnList
-            // 
-            this.BtnList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnList.Location = new System.Drawing.Point(532, 347);
-            this.BtnList.Name = "BtnList";
-            this.BtnList.Size = new System.Drawing.Size(64, 64);
-            this.BtnList.TabIndex = 6;
-            this.BtnList.Text = "Lista";
-            this.BtnList.UseVisualStyleBackColor = true;
-            this.BtnList.Click += new System.EventHandler(this.BtnList_Click);
+            this.BtnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSave.FlatAppearance.BorderSize = 0;
+            this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSave.Image = global::MascotContest.Properties.Resources.btn_save1;
+            this.BtnSave.Location = new System.Drawing.Point(256, 424);
+            this.BtnSave.Margin = new System.Windows.Forms.Padding(0);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(44, 44);
+            this.BtnSave.TabIndex = 3;
+            this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // PetOwnerUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(641, 486);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ClientSize = new System.Drawing.Size(548, 497);
             this.Controls.Add(this.BtnList);
             this.Controls.Add(this.Btndischarged);
             this.Controls.Add(this.BtnEdit);
@@ -279,6 +303,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Catálogo Propietario Mascota";
             this.pnlTopBarr.ResumeLayout(false);
+            this.pnlTopBarr.PerformLayout();
             this.PnlContainer.ResumeLayout(false);
             this.PnlContainer.PerformLayout();
             this.ResumeLayout(false);
@@ -308,6 +333,7 @@
         private System.Windows.Forms.Button Btndischarged;
         private System.Windows.Forms.Button BtnList;
         private System.Windows.Forms.Button BtnClosed;
+        private System.Windows.Forms.Label label1;
     }
 }
 

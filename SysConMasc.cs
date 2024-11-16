@@ -13,7 +13,7 @@ namespace MascotContest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PetOwnerUI());
+            Application.Run(new MdiApp());
         }//End-Method
     }//End-Class
 }//End-namespace

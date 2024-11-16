@@ -46,10 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserClass\PetOwnerUI.cs">
+    <Compile Include="MdiApp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserClass\PetOwnerUI.Designer.cs">
+    <Compile Include="MdiApp.Designer.cs">
+      <DependentUpon>MdiApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PetOwnerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PetOwnerUI.Designer.cs">
       <DependentUpon>PetOwnerUI.cs</DependentUpon>
     </Compile>
     <Compile Include="SysConMasc.cs" />
@@ -61,18 +72,17 @@
       <DependentUpon>FrmListPetOwner.cs</DependentUpon>
     </Compile>
     <Compile Include="UserClass\PetOwner.cs" />
-    <EmbeddedResource Include="UserClass\PetOwnerUI.resx">
+    <EmbeddedResource Include="MdiApp.resx">
+      <DependentUpon>MdiApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PetOwnerUI.resx">
       <DependentUpon>PetOwnerUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="UI\FrmListPetOwner.resx">
       <DependentUpon>FrmListPetOwner.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +99,41 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ico_person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_anular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_person01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mascota.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perrito1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fig_municip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_inscripcion_48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
