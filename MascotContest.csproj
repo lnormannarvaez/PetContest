@@ -57,6 +57,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI\EvaluatorView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EvaluatorView.Designer.cs">
+      <DependentUpon>EvaluatorView.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\PetOwnerUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="UserClass\PetOwner.cs" />
     <EmbeddedResource Include="MdiApp.resx">
       <DependentUpon>MdiApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EvaluatorView.resx">
+      <DependentUpon>EvaluatorView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PetOwnerUI.resx">
       <DependentUpon>PetOwnerUI.cs</DependentUpon>
