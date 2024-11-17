@@ -63,11 +63,11 @@
     <Compile Include="UI\EvaluatorView.Designer.cs">
       <DependentUpon>EvaluatorView.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\PetOwnerUI.cs">
+    <Compile Include="UI\FrmPetOwner.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\PetOwnerUI.Designer.cs">
-      <DependentUpon>PetOwnerUI.cs</DependentUpon>
+    <Compile Include="UI\FrmPetOwner.Designer.cs">
+      <DependentUpon>FrmPetOwner.cs</DependentUpon>
     </Compile>
     <Compile Include="SysConMasc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,8 +85,8 @@
     <EmbeddedResource Include="UI\EvaluatorView.resx">
       <DependentUpon>EvaluatorView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\PetOwnerUI.resx">
-      <DependentUpon>PetOwnerUI.cs</DependentUpon>
+    <EmbeddedResource Include="UI\FrmPetOwner.resx">
+      <DependentUpon>FrmPetOwner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

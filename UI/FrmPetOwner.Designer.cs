@@ -1,6 +1,6 @@
 ﻿namespace MascotContest
 {
-    partial class PetOwnerUI
+    partial class FrmPetOwner
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PetOwnerUI));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPetOwner));
             this.pnlTopBarr = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnClosed = new System.Windows.Forms.Button();

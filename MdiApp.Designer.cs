@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.TStr_NavMenu = new System.Windows.Forms.ToolStrip();
-            this.Spr_01 = new System.Windows.Forms.ToolStripSeparator();
-            this.Spr_02 = new System.Windows.Forms.ToolStripSeparator();
-            this.Spr_03 = new System.Windows.Forms.ToolStripSeparator();
-            this.Spr_4 = new System.Windows.Forms.ToolStripSeparator();
-            this.Spr_05 = new System.Windows.Forms.ToolStripSeparator();
-            this.Spr_06 = new System.Windows.Forms.ToolStripSeparator();
-            this.Spr_07 = new System.Windows.Forms.ToolStripSeparator();
             this.Btn_PetOwner = new System.Windows.Forms.ToolStripButton();
+            this.Spr_01 = new System.Windows.Forms.ToolStripSeparator();
             this.Btn_Evaluator = new System.Windows.Forms.ToolStripButton();
+            this.Spr_02 = new System.Windows.Forms.ToolStripSeparator();
             this.Btn_Pet = new System.Windows.Forms.ToolStripButton();
+            this.Spr_03 = new System.Windows.Forms.ToolStripSeparator();
             this.Btn_Municipality = new System.Windows.Forms.ToolStripButton();
+            this.Spr_4 = new System.Windows.Forms.ToolStripSeparator();
             this.Btn_Competition = new System.Windows.Forms.ToolStripButton();
+            this.Spr_05 = new System.Windows.Forms.ToolStripSeparator();
             this.Btn_Register = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.inscripciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.votacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ganadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Spr_06 = new System.Windows.Forms.ToolStripSeparator();
             this.Mnu_Report = new System.Windows.Forms.ToolStripDropDownButton();
             this.reporteParticipantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportePuntuacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteParticipantesJóvenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteParticiapantesAdultosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Spr_07 = new System.Windows.Forms.ToolStripSeparator();
             this.TStr_NavMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,41 +79,6 @@
             this.TStr_NavMenu.TabIndex = 1;
             this.TStr_NavMenu.Text = "Opciones de Navegación";
             // 
-            // Spr_01
-            // 
-            this.Spr_01.Name = "Spr_01";
-            this.Spr_01.Size = new System.Drawing.Size(6, 56);
-            // 
-            // Spr_02
-            // 
-            this.Spr_02.Name = "Spr_02";
-            this.Spr_02.Size = new System.Drawing.Size(6, 56);
-            // 
-            // Spr_03
-            // 
-            this.Spr_03.Name = "Spr_03";
-            this.Spr_03.Size = new System.Drawing.Size(6, 56);
-            // 
-            // Spr_4
-            // 
-            this.Spr_4.Name = "Spr_4";
-            this.Spr_4.Size = new System.Drawing.Size(6, 56);
-            // 
-            // Spr_05
-            // 
-            this.Spr_05.Name = "Spr_05";
-            this.Spr_05.Size = new System.Drawing.Size(6, 56);
-            // 
-            // Spr_06
-            // 
-            this.Spr_06.Name = "Spr_06";
-            this.Spr_06.Size = new System.Drawing.Size(6, 56);
-            // 
-            // Spr_07
-            // 
-            this.Spr_07.Name = "Spr_07";
-            this.Spr_07.Size = new System.Drawing.Size(6, 56);
-            // 
             // Btn_PetOwner
             // 
             this.Btn_PetOwner.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -126,6 +91,11 @@
             this.Btn_PetOwner.Text = "Propietario Mascota";
             this.Btn_PetOwner.Click += new System.EventHandler(this.Btn_PetOwner_Click);
             // 
+            // Spr_01
+            // 
+            this.Spr_01.Name = "Spr_01";
+            this.Spr_01.Size = new System.Drawing.Size(6, 56);
+            // 
             // Btn_Evaluator
             // 
             this.Btn_Evaluator.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -135,6 +105,11 @@
             this.Btn_Evaluator.Name = "Btn_Evaluator";
             this.Btn_Evaluator.Size = new System.Drawing.Size(52, 54);
             this.Btn_Evaluator.Text = "Catálogo Jurado";
+            // 
+            // Spr_02
+            // 
+            this.Spr_02.Name = "Spr_02";
+            this.Spr_02.Size = new System.Drawing.Size(6, 56);
             // 
             // Btn_Pet
             // 
@@ -146,6 +121,11 @@
             this.Btn_Pet.Size = new System.Drawing.Size(52, 54);
             this.Btn_Pet.Text = "toolStripButton1";
             // 
+            // Spr_03
+            // 
+            this.Spr_03.Name = "Spr_03";
+            this.Spr_03.Size = new System.Drawing.Size(6, 56);
+            // 
             // Btn_Municipality
             // 
             this.Btn_Municipality.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -155,6 +135,11 @@
             this.Btn_Municipality.Name = "Btn_Municipality";
             this.Btn_Municipality.Size = new System.Drawing.Size(52, 54);
             this.Btn_Municipality.Text = "Catálogo Concurso";
+            // 
+            // Spr_4
+            // 
+            this.Spr_4.Name = "Spr_4";
+            this.Spr_4.Size = new System.Drawing.Size(6, 56);
             // 
             // Btn_Competition
             // 
@@ -166,6 +151,11 @@
             this.Btn_Competition.Size = new System.Drawing.Size(52, 54);
             this.Btn_Competition.Text = "toolStripButton1";
             this.Btn_Competition.ToolTipText = "Catálogo Concurso";
+            // 
+            // Spr_05
+            // 
+            this.Spr_05.Name = "Spr_05";
+            this.Spr_05.Size = new System.Drawing.Size(6, 56);
             // 
             // Btn_Register
             // 
@@ -183,25 +173,30 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(161, 6);
             // 
             // inscripciónToolStripMenuItem
             // 
             this.inscripciónToolStripMenuItem.Name = "inscripciónToolStripMenuItem";
-            this.inscripciónToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.inscripciónToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.inscripciónToolStripMenuItem.Text = "Inscripción";
             // 
             // votacionesToolStripMenuItem
             // 
             this.votacionesToolStripMenuItem.Name = "votacionesToolStripMenuItem";
-            this.votacionesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.votacionesToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.votacionesToolStripMenuItem.Text = "Votaciones";
             // 
             // ganadoresToolStripMenuItem
             // 
             this.ganadoresToolStripMenuItem.Name = "ganadoresToolStripMenuItem";
-            this.ganadoresToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ganadoresToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.ganadoresToolStripMenuItem.Text = "Ganadores";
+            // 
+            // Spr_06
+            // 
+            this.Spr_06.Name = "Spr_06";
+            this.Spr_06.Size = new System.Drawing.Size(6, 56);
             // 
             // Mnu_Report
             // 
@@ -240,6 +235,11 @@
             this.reporteParticiapantesAdultosToolStripMenuItem.Name = "reporteParticiapantesAdultosToolStripMenuItem";
             this.reporteParticiapantesAdultosToolStripMenuItem.Size = new System.Drawing.Size(303, 26);
             this.reporteParticiapantesAdultosToolStripMenuItem.Text = "Reporte Particiapantes Adultos";
+            // 
+            // Spr_07
+            // 
+            this.Spr_07.Name = "Spr_07";
+            this.Spr_07.Size = new System.Drawing.Size(6, 56);
             // 
             // MdiApp
             // 

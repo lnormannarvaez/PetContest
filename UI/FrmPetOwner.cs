@@ -6,14 +6,14 @@ using System.Windows.Forms;
 
 namespace MascotContest
 {
-    public partial class PetOwnerUI : Form
+    public partial class FrmPetOwner : Form
     {
         //Variable de array para almacenar a los propietarios registrados
         private PetOwner[] arrayOwn = new PetOwner[10];
         //Control del crecimiento del arreglo
         private int index = -1;
 
-        public PetOwnerUI()
+        public FrmPetOwner()
         {
             //Método Constructor Propio del Formulario
             InitializeComponent();

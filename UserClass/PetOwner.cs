@@ -14,7 +14,7 @@ namespace MascotContest.UserClass
         public String Phone { get; set; }
         public String Email { get; set; }
         public String Address { get; set; }
-        public int Enable { get; set; }
+        public bool Enable { get; set; }
 
         //Atributo que indica la cantidad máxima de elementos que debe tener el arreglo
         private int SIZE = 10; 
@@ -24,7 +24,7 @@ namespace MascotContest.UserClass
         /* --------------------------------------------------------------------------------------- */
 
         public PetOwner() {
-            Enable = 1;
+            Enable = true;
         }
 
         /* --------------------------------------------------------------------------------------- */
@@ -97,13 +97,13 @@ namespace MascotContest.UserClass
             {
                 if (arr[i].IdNumber == id)
                 {
-                    arr[i].Enable = 0; //Deshabilitar el registro
+                    arr[i].Enable = true; //Deshabilitar el registro
                     return i;
                 }
                 ++i;    //Se incrementa en uno para pasar al siguiente indice
             }//End-While
 
-            return -1;  //Si no se encuentra retornará null 
+            return -1;  //Si no se encuentra retornará null
         }
 
     }//End-Class

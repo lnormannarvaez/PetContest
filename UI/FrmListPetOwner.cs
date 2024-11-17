@@ -1,19 +1,12 @@
 ﻿using MascotContest.UserClass;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MascotContest.UI
 {
     public partial class FrmListPetOwner : Form
     {
+
         private PetOwner[] list;
         //Constructor por Default, sin parárametros
         public FrmListPetOwner()
@@ -37,7 +30,7 @@ namespace MascotContest.UI
             while (list[i] != null) 
             {
                 //Validar si el registro esta habilitado para visualizar
-                if (list[i].Enable == 1)
+                if (list[i].Enable == true)
                 {
                     DGrView.Rows.Add(list[i].IdNumber,
                                      list[i].Name,
