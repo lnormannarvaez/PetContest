@@ -77,6 +77,7 @@
     <Compile Include="UI\FrmListPetOwner.Designer.cs">
       <DependentUpon>FrmListPetOwner.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserClass\Evaluator.cs" />
     <Compile Include="UserClass\PetOwner.cs" />
     <EmbeddedResource Include="MdiApp.resx">
       <DependentUpon>MdiApp.cs</DependentUpon>
